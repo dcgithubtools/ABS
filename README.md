@@ -20,9 +20,10 @@ python 3.7 + PyTorch 1.13 + CUDA11.6
 ## Train
 DIV2K: https://data.vision.ee.ethz.ch/cvl/DIV2K/
 ## Run
-1.cd ..data2patch/data_scripts/
+```code
+cd ..data2patch/data_scripts/
 run python extract_subimages.py
-
+```
 
 ## Test
 Test2K,Test4K,Test8K:https://drive.google.com/drive/folders/18b3QKaDJdrd9y0KwtrWU2Vp9nHxvfTZH
