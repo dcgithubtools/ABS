@@ -17,7 +17,10 @@ If you have used this code or data in your research, please cite the following p
 python 3.7 + PyTorch 1.13 + CUDA11.6
 
 # Data Preparation
+## Train
 DIV2K: https://data.vision.ee.ethz.ch/cvl/DIV2K/
+## Test
+Test2K,Test4K,Test8K:https://drive.google.com/drive/folders/18b3QKaDJdrd9y0KwtrWU2Vp9nHxvfTZH
 
 
 # Fisrt Stage
