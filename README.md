@@ -20,6 +20,7 @@ python 3.7 + PyTorch 1.13 + CUDA11.6
 ## Train
 DIV2K: https://data.vision.ee.ethz.ch/cvl/DIV2K/
 ## Run
+Replace the dataset path in the ..data2patch/data_scripts/extract_subimages.py file, and then run the codes as follows:
 ```code
 cd ..data2patch/data_scripts/
 run python extract_subimages.py
