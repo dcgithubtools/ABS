@@ -22,13 +22,25 @@ DIV2K: https://data.vision.ee.ethz.ch/cvl/DIV2K/
 ## Run
 Replace the dataset path in the ..data2patch/data_scripts/extract_subimages.py file, and then run the codes as follows:
 ```code
-cd ..data2patch/data_scripts/
-run python extract_subimages.py
+cd ../data2patch/data_scripts/
+python extract_subimages.py
 ```
 
 ## Test
 Test2K,Test4K,Test8K:https://drive.google.com/drive/folders/18b3QKaDJdrd9y0KwtrWU2Vp9nHxvfTZH
 
+# First Stage
+The First Stage is to train the three branches. Train the basic SR model as Hard-Branch, and run the codes as follows:
+```code
+cd ../code/
+python basicsr/train.py -opt options/train/train_base.yml
+```
+Train the SR branch with fewer channels, and run the codes as follows:
+```code
+python basicsr/train.py -opt options/train/train_base_d.yml
+```
 
-# Fisrt Stage
 # Second-Stage
+
+
+
