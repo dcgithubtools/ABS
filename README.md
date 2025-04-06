@@ -13,7 +13,8 @@ If you have used this code or data in your research, please cite the following p
 
 
 # How to Train ABS
-
+## Environmental dependencies
+python 3.7 + PyTorch 1.13 + CUDA11.6
 
 # Data Preparation
 # Fisrt Stage
