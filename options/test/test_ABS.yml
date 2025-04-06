@@ -1,0 +1,44 @@
+name: FSRCNNR
+# model_type: SRModel
+model_type: TileModel
+scale: 4
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 10
+tile: 64
+gpu_id: '0'
+
+datasets:
+  test_00:  # the 1st test dataset
+    name: Test2K
+    type: PairedImageDataset
+    dataroot_gt: # datapath
+    dataroot_lq: # datapath
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: FSRCNNR
+  in_nc: 3 
+  out_nc: 3
+
+# path
+path:
+  pretrain_network_g: # datapath
+  strict_load_g: true
+  param_key_g: 'params_ema'
+  
+# validation settings
+val:
+  save_img: false
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 4
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 4
+      test_y_channel: false
