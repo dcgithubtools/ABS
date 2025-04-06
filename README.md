@@ -8,7 +8,7 @@ If you have used this code or data in your research, please cite the following p
   title   = {Adaptive Branch Selection for Accelerate Image Super-Resolution}
   author  = {Cheng, Ding and Zhongqiu, Zhao and Hao, Shen and Xiufeng Liu}
   journal = {The Visual Computer},
-  year    = {2025}
+  year    = {2025}}
 
 
 
